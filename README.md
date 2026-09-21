@@ -13,12 +13,12 @@ Generated on-device by this engine — no post-processing, no cloud.
 **English — `af_heart`**
 > "Reading should feel effortless. This is Kokoro — a small neural voice running entirely on your device, no cloud, no subscription."
 
-<audio controls src="docs/samples/en_af_heart.m4a"></audio>
+<video controls src="docs/samples/en_af_heart.mp4"></video>
 
 **Deutsch — `de_DE-thorsten-medium` (Piper pack, same engine interface)**
 > "Der Herbst ist dieses Jahr früh gekommen. Am Morgen liegt Nebel über den Feldern, und die Blätter verfärben sich langsam von Grün zu Gold."
 
-<audio controls src="docs/samples/de_thorsten.m4a"></audio>
+<video controls src="docs/samples/de_thorsten.mp4"></video>
 
 ## What this is
 
