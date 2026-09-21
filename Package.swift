@@ -29,8 +29,12 @@ let package = Package(
     products: [
         .library(name: "KokoroTTS", targets: ["KokoroTTS"]),
         .executable(name: "kokorocli", targets: ["kokorocli"]),
+        .executable(name: "kokoroane", targets: ["kokoroane"]),
         .executable(name: "KokoroDemo", targets: ["KokoroDemo"]),
         .executable(name: "KokoroApp", targets: ["KokoroApp"]),
+    ],
+    dependencies: [
+        .package(name: "mweinbach-kokoro", path: "Packages/mweinbach-kokoro"),
     ],
     targets: [
         .systemLibrary(
@@ -50,6 +54,12 @@ let package = Package(
             name: "kokorocli",
             dependencies: ["KokoroTTS"],
             linkerSettings: sherpaLinkSettings
+        ),
+        .executableTarget(
+            name: "kokoroane",
+            dependencies: [
+                .product(name: "Kokoro", package: "mweinbach-kokoro"),
+            ]
         ),
         .executableTarget(
             name: "KokoroDemo",
