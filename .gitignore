@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Swift build artifacts
+.build/
+*.o
+*.swiftmodule
+.swiftpm/
+
+# App bundle (build artifact)
+KokoroApp.app/
+
+# Downloaded model weights & data (large binaries, fetch via scripts)
+vendor/
+
+# Generated audio of local runs
+*.wav
+app-screenshot.png
